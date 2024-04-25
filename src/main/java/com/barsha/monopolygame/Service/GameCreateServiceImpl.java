@@ -184,7 +184,9 @@ public class GameCreateServiceImpl implements GameCreateService{
 
         if (nextStep.equals(ApplicationConstant.NEXT_STEP_TO_CONTINUE)) {
             gameDetailsTable.setGameID(gameID);
+            gameDetailsTable.setPlayer1UserID(hostID);
             gameDetailsTable.setPlayer1CurrentPosition(ApplicationConstant.ZERO);
+            gameDetailsTable.setPlayer2UserID(coPlayerID);
             gameDetailsTable.setPlayer2CurrentPosition(ApplicationConstant.ZERO);
             gameDetailsTable.setCurrentStatus(ApplicationConstant.CURRENT_STATUS_ACTIVE);
 
@@ -214,7 +216,9 @@ public class GameCreateServiceImpl implements GameCreateService{
 
         if (nextStep.equals(ApplicationConstant.NEXT_STEP_TO_CONTINUE)) {
             gameBalanceTable.setGameID(gameID);
+            gameBalanceTable.setPlayer1UserID(hostID);
             gameBalanceTable.setPlayer1Balance(1000);
+            gameBalanceTable.setPlayer2UserID(coPlayerID);
             gameBalanceTable.setPlayer2Balance(1000);
 
             functionResult = gameBalanceTableDao.InsertGameBalanceTable(gameBalanceTable);

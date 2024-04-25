@@ -41,4 +41,7 @@ public class ApplicationConstant {
 
     public static final String      GAME_STATUS_ONGOING                 = "O";
     public static final String      GAME_STATUS_END                     = "E";
+
+    public static final String      USER_ACTION_BUY                     = "B";
+    public static final String      USER_ACTION_RENT                    = "R";
 }

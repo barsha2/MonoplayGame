@@ -30,4 +30,10 @@ public class CommonFunction {
         Collections.shuffle(characters);
         return characters.stream().map(Object::toString).collect(Collectors.joining());
     }
+
+    public static int GenerateRandomNumber(int min, int max) {
+        Random  random = new Random();
+        int     number = random.nextInt(max - min) + min;
+        return number;
+    }
 }

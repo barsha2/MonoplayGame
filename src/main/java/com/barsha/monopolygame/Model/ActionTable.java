@@ -9,12 +9,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GameDetailsTable {
+public class ActionTable {
     private BigInteger  uniqueID;
     private String      gameID;
-    private String      player1UserID;
-    private int         player1CurrentPosition;
-    private String      player2UserID;
-    private int         player2CurrentPosition;
-    private int         currentStatus;
+    private String      userID;
+    private String      userAction;
+    private String      placeName;
 }
