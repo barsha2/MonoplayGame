@@ -73,6 +73,7 @@ public class RollDieServiceImpl implements RollDieService{
         int         nextPosition    = ApplicationConstant.ZERO;
         int         placeValue      = ApplicationConstant.ZERO;
         int         functionResult  = ApplicationConstant.ZERO;
+        int         start           = 10;
         String      errorCode       = ApplicationConstant.SPACES;
         String      gameID          = ApplicationConstant.SPACES;
         String      userID          = ApplicationConstant.SPACES;
@@ -143,7 +144,10 @@ public class RollDieServiceImpl implements RollDieService{
                 placeValue = nextPosition;
             }
 
-
+            if (placeValue == start) {
+                commonResponse.setMessege("You Won! " + userID);
+                commonResponse.setTransactionResult(ApplicationConstant.TRANSACTION_RESULT_SUCCESS);
+            }
             dataTableList = dataTableDao.GetDataTableByUniqueID(placeValue);
 
             if (dataTableList != null) {
