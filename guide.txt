@@ -1,0 +1,34 @@
+MONOPOLY : Game Document
+Barsha Podder
+April 26, 2024
+
+Index
+1. Game : Summary, General Information, Project Development
+2. Rules of the game
+
+1 Game Design
+1.1 Summary:
+Enjoy the classic MONOPOLY play in the tradition of the beloved, a best selling board game on your PC. Like the board-game, the objective of the game is to become the wealthiest player through buying, renting, selling property. The game is one involving clever planning trying to bankrupt the others, a setting which will surely appeal to people of all ages who enjoy critical thinking and strategy games. The game is suitable for any modern operating system, is supported on OS X and Ubuntu(Linux).
+   The players navigate through many cities of the world, buying properties as they go along board. The game-play is kept optimistic and whimsical and it challenges the players to be at their toes throughout the game since a new “Cheating” strategy has been added. It also involves virtual currency and not real money, so there is never any actual loss/gain of money and players can enjoy the game completely.
+   The game rewards the players alertness, whereby they can report if some player cheats for example, through giving them more money. Since the game is not a linear tread on the board like the traditional game, it allows for more decisions and paths for the player to chose from. Keeping the track of others moves will be just as important as figuring out your next moves.
+
+
+
+
+1.2 Project Development:
+The complete project development takes place in different phases whereby different modules were completed and finally integrated to create the game.
+Database Design: This part is important for project Development. I’ve used draw.io to design the database and Table.
+
+Project Structure: This Part is developing project structure such as Controller, Service, Dao, Model, Mapper.
+
+API Development: this part is developing the feature such as creating a new game with 2 player if players are available. And then playing with rolling 2 dice and adding 2 number then buy or rent a place. And if your bank balance is less than 50 then you lose and there is a place in game called ‘Start’ if you land on it you won.
+
+
+2 Rules of the Game
+1. You are Jessica in the game.
+2. Objective is to make Jessica bankrupt.
+3. The idea is the you and the jessica take turns one by one and move ac- cording to the number that comes up on the dice.
+4. If you lands on unowned property, either he buys it.
+5. If you lands on property owned by Jessica, you have to pay rent.
+6. If you land on ‘Start’ You won.
+7. If your bank balance is less than 50 due to paying rent and buying property you lose.
